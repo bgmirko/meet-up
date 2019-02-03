@@ -1,0 +1,7 @@
+.Groups{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+}

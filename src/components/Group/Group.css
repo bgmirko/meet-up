@@ -1,0 +1,41 @@
+.Group{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    list-style-type: none;
+    cursor:pointer;
+    width: 310px;
+    height: 180px;
+    margin-bottom: 15px; 
+    margin-right: 15px;
+    background-image: linear-gradient(rgba(15,20,31,0) 0,rgba(15,20,31,.1) 25%,rgba(15,20,31,.8) 100%);
+}
+
+.Group img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.Group h2{
+    margin: 0 0 0px 16px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.Group p{
+    margin: 0 0 16px 16px;
+    font-size: 16px;
+    color: #ffffffb3;;
+}
+
+/* .Group a{
+  
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+} */

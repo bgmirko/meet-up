@@ -1,0 +1,52 @@
+.Event{
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 16px 16px 0 16px;
+    color: #2e3e4899;
+    transition: transform, shadow .2s;
+    transition: box-shadow .2s;
+}
+
+.Event:hover{
+    transform: translateY(-2px);
+    box-shadow: -2px 2px 6px rgba(0,0,0,0.15);
+    
+}
+
+.Event time{
+    font-size: 14px;
+    weight: 500;
+}
+
+.Event h3{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 12px 0 12px 0;
+}
+
+.Event address{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    weight: 500;
+    padding-left: 5px;
+}
+
+.Line{
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.Event p{
+    text-align: top;
+    line-height: 32px;
+}
+
+.Event a{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}

@@ -1,0 +1,29 @@
+.Slider{
+    /* position: relative; */
+}
+
+/* .Slider img{
+    width: 100%;
+} */
+
+.SliderText{
+    width: 1000px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
+.SliderText h1{
+    width: 450px;
+    font-size: 42px;
+    font-weight: 600;
+    margin: 0;
+    color: #ff4242e6;
+}
+
+
+.SliderText h2{
+    width: 450px;
+    font-size: 20px;
+    font-weight: 550;
+    margin: 0;
+}

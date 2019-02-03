@@ -1,0 +1,30 @@
+.SearchControl{
+    background-color: red;
+    display: flex;
+    align-items: center;
+
+}
+
+.SearchControl form{
+    display: flex;
+    align-items: center;
+}
+
+.SearchControl input{
+    height: 35px;
+    width: 220px;
+    margin: 8px -30px 8px 8px;
+    border-radius: 5px;
+    padding-left: 8px;
+}
+
+.SearchControl button{
+    border: none;
+    background-color: #fff;
+    width: 18px;
+    height: 18px;
+}
+
+.SearchControl button svg{
+    margin: 0;
+}

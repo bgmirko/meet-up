@@ -1,0 +1,83 @@
+.EventDetails{
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.EventDetails img{
+    width: 600px;
+}
+
+.EventDetails span{
+    color: #2e3e4899;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.EventDetails h1{
+    color: #2e3e48;
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 35px;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.EventDetails .Line{
+    margin: 0;
+    padding: 0;
+}
+
+.PageHead{
+    border-bottom: 1px solid #2e3e481f;
+    padding-bottom: 20px;
+}
+
+.PageHeadElements{
+    display: flex;
+}
+
+.EventDescription{
+    padding-top: 20px;
+}
+
+.Wrap{
+    width: 720px;
+    margin-left: 200px;
+}
+
+.EventDetails .DateDisplay__wrapper{
+    margin-left: -74px;
+    display: block;
+}
+
+.EventDetails .DateDisplay__wrapper time{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    min-width: 36px;
+    min-height: 36px;
+    border: 1px solid rgba(46, 62, 72, 0.12);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.EventDetails .DateDisplay_day{
+    display: block;
+    color: #f13a59;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.EventDetails .DateDisplay_month{
+    display: block;
+    color: rgba(46,62,72,.6);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.PageHeadEventInfo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}

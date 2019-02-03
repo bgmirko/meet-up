@@ -1,0 +1,10 @@
+.Events{
+    max-width: 600px;
+    padding-bottom: 30px;
+}
+
+.Events h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e3e48;
+}
