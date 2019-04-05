@@ -55,7 +55,6 @@ class Events extends Component {
             })
         }
       
-
         return(
             <div className={classes.Events}>
                 <h2>Past events ({this.state.events.length})</h2>

@@ -6,8 +6,6 @@ import classes from './GroupDetails.css';
 import Icon from '../../components/Icon/Icon';
 import Events from '../../components/GroupDetails/Events/Events';
 
-
-
 const groupDetails = (props) => {
 
     let group = {};
@@ -16,23 +14,7 @@ const groupDetails = (props) => {
         group = props.location.state.group;
     }
 
-
-
-    // let eventUrlName = group.link.substring("https://www.meetup.com/".length);
-    // eventUrlName = eventUrlName.substring(0, eventUrlName.length - 1);
-    // console.log(eventUrlName);
-
-    // const clickOnGroupEvent = () => {
-    //     console.log("ovde sam");
-    // }
-    console.log("[GroupDetail] ---------------");
-    console.log(group);
-
     return (
-
-       
-
-
         <div className={classes.GroupDetails}>
             <div className={classes.GroupHomeHeader}>
                 <div className={[classes.Wrap, classes.Flex_row].join(" ")}>
@@ -63,10 +45,6 @@ const groupDetails = (props) => {
             </div>
         </div>
     );
-
 }
-
-
-
 
 export default groupDetails;

@@ -12,7 +12,6 @@ const slider = () => {
         paddingTop: 50
     };
 
-
     return (
         <div style={style}>
             <div className={classes.SliderText}>

@@ -9,7 +9,6 @@ const Event = (props) => {
     const weekday = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
     const monthName = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUNE', 'JULY', 'AUG', 'SEPT', 'OCT', 'NOV', 'DEC'];
 
-
     const date = new Date(props.time);
     const dateFormated = `${weekday[date.getDay()]}, ${monthName[date.getMonth()]} ${date.getDate()}, 
         ${date.getHours() > 12 ? date.getHours() - 12 : date.getHours()}:${date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes()} ${date.getHours() > 12 ? 'PM' : 'AM'}`;
@@ -21,7 +20,6 @@ const Event = (props) => {
 
     return (
         <div className={classes.Event}>
-            {/* <Link to={props.eventUrl} onClick={props.click}></Link> */}
             <Link to={props.eventUrl} onClick={props.click} onContextMenu={contextMenu}></Link>
             <div className={classes.EventDetails}>
                 <time>{dateFormated}</time>
@@ -33,7 +31,6 @@ const Event = (props) => {
             </div>
         </div>
     );
-
 }
 
 export default Event;

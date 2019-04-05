@@ -5,7 +5,6 @@ import axios from 'axios';
 import Icon from '../../components/Icon/Icon';
 import classes from './SearchControl.css';
 
-
 class SearchGroup extends Component {
 
     state = {
@@ -17,7 +16,6 @@ class SearchGroup extends Component {
         const url = `https://api.meetup.com/find/groups?photo-host=public&sig_id=215516831&sig=72c4dc82697c409d7b1ebff806b0ed03be229f4e`;
         this.searchGroup(url);
     }
-
 
     onSearchHandler = (event) => {
         event.preventDefault();
@@ -37,7 +35,6 @@ class SearchGroup extends Component {
 
     searchGroup = (url) => {
         const urlProxy = `https://cors-anywhere.herokuapp.com/`;
-        //   const urlProxy2 = "https://crossorigin.me/"
         axios.get(`${urlProxy}${url}`)
             .then(response => {
                 console.log(response.data);
@@ -62,11 +59,7 @@ class SearchGroup extends Component {
                 </form>
             </div>
         )
-
-
     }
-
-
 }
 
 export default SearchGroup;

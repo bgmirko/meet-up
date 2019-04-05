@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 
-
 import classes from './App.css';
 import Header from './components/Header/Header';
 import GroupDetails from './components/GroupDetails/GroupDetails';
@@ -19,27 +18,17 @@ class App extends Component {
     event: []
   }
 
-  componentDidMount() {
-    console.log("[App.js] inisde componentDidMount");
-  }
-
   handleGroups(groups) {
-    console.log("[App.js] handle groups");
     this.setState({ groups: groups });
   }
 
   onGroupEventClicked(event, eventUrlName, id) {
-    console.log("Group Event clicked!!!!!!!!!!");
-    console.log(eventUrlName);
-    console.log(id);
     this.setState({ event: event, eventLink: `/group/${eventUrlName}/events/${id}` })
   }
 
   render() {
-    console.log("[App.js] inside rendere");
-    console.log(this.state);
-    return (
 
+    return (
       <BrowserRouter>
         <div>
           <Header />
@@ -49,7 +38,6 @@ class App extends Component {
                 showGroups = { (groups) => this.handleGroups(groups)} />
           </div>
           <Switch>
-            {/* <Route path="/group/WP-Meetup-NS/events/234155302" exact component={EventDetails} /> */}
             <Route path={this.state.eventLink} exact render={() => <EventDetails
               event={this.state.event}
             />} />
